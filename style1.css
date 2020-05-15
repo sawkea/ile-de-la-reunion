@@ -71,7 +71,9 @@ h2{
 .mr-0{
     margin: 0;
 }
-
+.mr-left2{
+    margin-left: 2rem;
+}
 
 /** grid **/
 .container{
@@ -98,9 +100,10 @@ h2{
 /** Généric **/
 
 h1 {
-    font-size: 4rem;
-    color: white;
+    font-size: 2.5rem;
+    color: black;
     text-align: center;
+    line-height: 10rem;
 
 }
 
@@ -147,16 +150,15 @@ a {
 
 /** background **/
 .bg-image-header{
-    background-image:linear-gradient( to right,rgba(225, 228, 237, 30%), rgba(225, 228, 237, 30%)),url(img/la-reunion-header.png);
-
+    background-image:url(img/la-reunion-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 820px;
+    padding-top: 5rem;
+    height: 500px;
 }
 .bg-title{
-    background-color: red;
-    background-position-x: center;
-
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 10rem;
 }
 
 
