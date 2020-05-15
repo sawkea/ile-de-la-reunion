@@ -76,7 +76,7 @@ h2{
 /** grid **/
 .container{
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -95,20 +95,29 @@ h2{
     align-items: center;
 }
 
+/** Généric **/
+
 h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+
 }
 
 h2 {
     font-weight: bold;
 }
 
+/** Spécifique **/
+
 #slogan {
     font-family: Conv_kingtom;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #007A4D;
 }
+
+
+/** HEADER **/
 
 /** navigation **/
 nav {
@@ -122,22 +131,33 @@ nav li {
     display: inline;
     margin: 0 0.75rem;
 }
-#nav a:hover{
+.nav a:hover{
     color:#ED1C24;
     font-weight: bold ;
     font-size: 110%;
 }
-#en-cours a{
+.en-cours a{
     color: #ED1C24;
     font-weight: bold;
     font-size: 110%;
 }
-
 a { 
     text-decoration: none;
 }
 
+/** background **/
+.bg-image-header{
+    background-image:linear-gradient( to right,rgba(225, 228, 237, 30%), rgba(225, 228, 237, 30%)),url(img/la-reunion-header.png);
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 820px;
+}
+.bg-title{
+    background-color: red;
+    background-position-x: center;
+
+}
 
 
 .source {
