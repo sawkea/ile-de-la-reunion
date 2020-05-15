@@ -75,6 +75,16 @@ h2{
     margin-left: 2rem;
 }
 
+
+/** reset 0 **/
+body{
+    margin : 0;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+}
+
 /** grid **/
 .container{
     width: 100%;
@@ -147,6 +157,23 @@ nav li {
 a { 
     text-decoration: none;
 }
+#entete{
+    max-width: 1200px;
+    position: fixed;
+    right: 10%;
+    left: 10%;
+    height: 6rem;
+}
+#entete > header{
+    background-color: rgba(255, 255,255,0.6); 
+    height: 9.5rem;
+}
+
+.bg-logo-nav{
+    background-image: linear-gradient rgba(255, 255,255,);
+    height: 9.5rem;
+    background-attachment: fixed;
+}
 
 /** background **/
 .bg-image-header{
@@ -165,4 +192,16 @@ a {
 .source {
     color: #007A4D;
     font-weight: bold;
+}
+
+/** MAIN - accueil **/
+.bg-article{
+    background-image:url(img/reunion-vue-du-ciel.png);
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    height: 253px;
+}
+.bg-title-article{
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 5rem;
 }
