@@ -48,6 +48,10 @@ h1{
     font-family: RestoraExtraLight;
 }
 
+/** Font size **/
+body{
+    font-size: 100%;
+}
 
 
 /** Color **/
@@ -55,14 +59,11 @@ h1{
     color: black;
 }
 
-.text-primary{
-    color: black;
-}
 h2{
     color: #007A4D;
 }
 
-.color {
+.color-red {
     color:#ED1C24;
 }
 
@@ -73,9 +74,9 @@ h2{
 
 
 /** grid **/
-.grid{
+.container{
     width: 100%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -112,29 +113,32 @@ h2 {
 /** navigation **/
 nav {
     font-family: RestoraExtraLight;
+    font-size: 0.75rem;
     text-align: right;
-
 }
 nav li {
     list-style: none;
-    font-weight: 200px;
+    font-weight: 12.5rem;
     display: inline;
-    margin: 0 15px;
+    margin: 0 0.75rem;
 }
-
-
-
-
+#nav a:hover{
+    color:#ED1C24;
+    font-weight: bold ;
+    font-size: 110%;
+}
+#en-cours a{
+    color: #ED1C24;
+    font-weight: bold;
+    font-size: 110%;
+}
 
 a { 
     text-decoration: none;
-
 }
 
 
-.color {
-    color:#ED1C24;
-}
+
 
 .source {
     color: #007A4D;
