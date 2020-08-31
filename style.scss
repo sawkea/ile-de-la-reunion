@@ -33,7 +33,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+:root{
+    --color-secondary: rgb(1, 136, 96);
+    --color-three: #ed1c24;
+}
 /** Font **/
 
 p{
@@ -60,20 +63,13 @@ body{
 }
 
 h2{
-    color: #007A4D;
+    color: var(--color-secondary);
 }
 
 .color-red {
     color:#ED1C24;
 }
 
-/** marge **/
-.mr-0{
-    margin: 0;
-}
-.mr-left2{
-    margin-left: 2rem;
-}
 
 
 /** reset 0 **/
@@ -87,33 +83,18 @@ body{
 
 /** grid **/
 .container{
-    width: 320px;
+    width: 350px;
     margin: 0 auto;
 }
 
-/** flex **/
-
-.d-flex{
-    display: flex;
-}
-.flex-wrap{
-    flex-wrap:wrap;
-}
-.flex-justify-between{
-    justify-content: space-between;
-}
-.align-item-center{
-    align-items: center;
-}
 
 /** Généric **/
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
     text-align: center;
-    line-height: 10rem;
-
+    font-weight: bold;
 }
 
 h2 {
@@ -125,54 +106,81 @@ h2 {
 #slogan {
     font-family: Conv_kingtom;
     font-size: 2rem;
-    color: #007A4D;
+    color: rgb(32, 32, 32);
 }
 
 
 /** HEADER **/
 
 /** navigation **/
-nav {
+.nav {
+    background-color: var(--color-secondary);
+    
     font-family: RestoraExtraLight;
-    font-size: 0.75rem;
-    text-align: right;
+    font-size: 1rem;
+    ul{
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a{
+        color: #fff!important;
+    }
+    a:hover{
+        color: #fff!important;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    li {
+        padding-top: 0.7rem;
+        color: var(--color-secondary);
+        list-style: none;
+    }
+    .ligne-nav{
+        border-bottom: 1px solid #fff;
+        margin-top: 0.3rem;
+        width: 19.6rem;
+    }
 }
-nav li {
-    list-style: none;
-    font-weight: 12.5rem;
-    display: inline;
-    margin: 0 0.75rem;
-}
-.nav a:hover{
-    color:#ED1C24;
-    font-weight: bold ;
-    font-size: 110%;
-}
+
 .en-cours a{
-    color: #ED1C24;
     font-weight: bold;
     font-size: 110%;
 }
-a { 
-    text-decoration: none;
+
+.bg-start{
+    background-color: rgb(1, 136, 96);
+    height: 2rem;
+    margin-bottom: 1rem;
 }
-#entete{
-    max-width: 1200px;
-    position: fixed;
-    right: 10%;
-    left: 10%;
-    height: 6rem;
+.bg-end{
+    background-color: rgb(1, 136, 96);
+    height: 5rem;
+    margin-top: 1rem;
 }
-#entete > header{
-    background-color: white; 
-    height: 9.5rem;
+.bg-section-1{
+    h2{
+        padding-top: 2rem;
+        color: white;
+    }
+    .ligne{
+        border-bottom: 1px solid white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+        
+    }
+    background-color: var(--color-secondary);
+}
+.bg-section-2{
+    
+    padding-bottom: 1rem;
+    background-color: var(--color-secondary);
+    width: 100%!important;
 }
 
-.bg-logo-nav{
-    background-image: linear-gradient rgba(255, 255,255,);
-    height: 9.5rem;
-    background-attachment: fixed;
-}
 
 /** background **/
 .bg-image-header{
@@ -180,10 +188,10 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5rem;
-    height: 500px;
+    height: 200px;
 }
 .bg-title{
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.35);
     height: 10rem;
 }
 
@@ -193,14 +201,26 @@ a {
     font-weight: bold;
 }
 
-/** MAIN - accueil **/
-.bg-article{
-    background-image:url(img/reunion-vue-du-ciel.png);
-    background-repeat: no-repeat;
-    padding-top: 5rem;
-    height: 253px;
+.ligne{
+    border-bottom: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 50%;
 }
-.bg-title-article{
-    background-color: rgba(255, 255, 255, 0.25);
-    height: 5rem;
+.arrow{
+    margin-right: 0;
 }
+.card{
+    width: 94%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 100%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
